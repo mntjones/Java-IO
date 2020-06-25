@@ -10,21 +10,31 @@ import java.util.Set;
 public class Locations implements Map<Integer, Location> {
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
 
-    public static void main(String[] args) {
-
-        FileWriter locFile = null;
-        try {
-            locFile = new FileWriter("location.txt");
+    public static void main(String[] args) throws IOException{
+        // try with resources
+        try (FileWriter locFile = new FileWriter("locations.txt")) {
             for (Location location : locations.values()) {
-                locFile.write(location.getLocationID() + ", " + location.getDescription() + "\n");
+                locFile.write(location.getLocationID() + ", " + location.getDescription()
+                + "\n");
             }
+        }
 
-            locFile.close();
-        }
-        catch (IOException e) {
-            System.out.println("In catch block");
-            e.printStackTrace();
-        }
+//        FileWriter locFile = null;
+//        try {
+//            locFile = new FileWriter("location.txt");
+//            for (Location location : locations.values()) {
+//                locFile.write(location.getLocationID() + ", " + location.getDescription() + "\n");
+//            }
+//        }
+//        finally {
+//            System.out.println("In finally block");
+//
+//            if (locFile != null) {
+//                System.out.println("close locfile");
+//                locFile.close();
+//
+//            }
+//        }
     }
 
     // only one instance will be created - moved from main
