@@ -1,5 +1,7 @@
 package com.example.monica;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +10,24 @@ import java.util.Set;
 public class Locations implements Map<Integer, Location> {
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
 
-    // only one instance will be created
+    public static void main(String[] args) {
+
+        FileWriter locFile = null;
+        try {
+            locFile = new FileWriter("location.txt");
+            for (Location location : locations.values()) {
+                locFile.write(location.getLocationID() + ", " + location.getDescription() + "\n");
+            }
+
+            locFile.close();
+        }
+        catch (IOException e) {
+            System.out.println("In catch block");
+            e.printStackTrace();
+        }
+    }
+
+    // only one instance will be created - moved from main
     static {
         Map<String, Integer> tempExit = new HashMap<String, Integer>();
         locations.put(0, new Location(0, "You are sitting in front of a computer", tempExit));
