@@ -4,11 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-// Challenge: Allow players to type full words or phrases, then move to the correct location
-// based on their input. Phrases such as, "Go West", "run South", or just "East" should work.
-// An attempt to move in an invalid location will print an error message and the player will remain
-// in place. Single letter commands should still work
-
 public class Main {
     private static Locations locations = new Locations();
 
@@ -16,9 +11,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-
-
-        int loc = 1;
+        int loc = 64;
 
         while(true) {
             System.out.println(locations.get(loc).getDescription());
@@ -61,8 +54,6 @@ public class Main {
                         break;
                 }
             }
-
-
 
             if (exits.containsKey(direction)) {
                 loc = exits.get(direction);

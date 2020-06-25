@@ -12,8 +12,6 @@ public class Location {
     public Location(int locationID, String description, Map<String, Integer> exits) {
         this.locationID = locationID;
         this.description = description;
-        // will crash at runtime if no map provided - null
-        //this.exits = new HashMap<String, Integer>(exits);
 
         //fix:
         if(exits != null) {
@@ -24,10 +22,6 @@ public class Location {
         }
         this.exits.put("Q", 0);
     }
-
-//    public void addExit(String direction, int location) {
-//        exits.put(direction, location);
-//    }
 
     public int getLocationID() {
         return locationID;
