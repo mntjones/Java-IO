@@ -1,6 +1,0 @@
-0, You are sitting in front of a computer
-1, You are standing at the end of a road by a building
-2, You are on top of a hill
-3, You are inside a well house for a small spring
-4, You are in a valley by a stream
-5, You are in a forest
