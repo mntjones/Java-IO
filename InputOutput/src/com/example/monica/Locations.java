@@ -1,5 +1,6 @@
 package com.example.monica;
 
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -17,7 +18,7 @@ public class Locations implements Map<Integer, Location> {
                 + "\n");
                 for (String direction : location.getExits().keySet()) {
                     dirFile.write(location.getLocationID() + ", " + direction + ", " +
-                            location.getExits().get(direction) + " \n");
+                            location.getExits().get(direction) + "\n");
                 }
             }
         }
@@ -67,6 +68,36 @@ public class Locations implements Map<Integer, Location> {
             }
         }
 
+        // Now read exits
+
+        try {
+            scanner = new Scanner(new BufferedReader(new FileReader("directions.txt")));
+            scanner.useDelimiter(", ");
+            while(scanner.hasNextLine()) {
+//                int loc = scanner.nextInt();
+//
+//                String direction = scanner.next();
+//                scanner.skip(scanner.delimiter());
+//                String destination = scanner.nextLine().trim();
+//                int dest = Integer.parseInt(destination);
+                String input = scanner.nextLine();
+                String[] data = input.split(", ");
+                int loc = Integer.parseInt(data[0].trim());
+                String direction = data[1];
+                int dest = Integer.parseInt(data[2].trim());
+                System.out.println(loc + " : " + direction + " : " + dest);
+                Location location = locations.get(loc);
+                location.addExit(direction, dest);
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if(scanner != null) {
+                scanner.close();
+            }
+        }
 //        Map<String, Integer> tempExit = new HashMap<String, Integer>();
 //        locations.put(0, new Location(0, "You are sitting in front of a computer", tempExit));
 //
