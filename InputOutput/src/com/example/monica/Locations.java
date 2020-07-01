@@ -36,7 +36,7 @@ public class Locations implements Map<Integer, Location> {
     }
 
     // only one instance will be created - moved from main
-   
+
     static {
 
         try(ObjectInputStream locFile = new ObjectInputStream(new BufferedInputStream(new FileInputStream("locations.dat")))) {
