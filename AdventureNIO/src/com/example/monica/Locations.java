@@ -11,24 +11,12 @@ public class Locations implements Map<Integer, Location> {
 
     public static void main(String[] args) throws IOException{
 
-        Path locPath = FileSystems.getDefault().getPath("locations_big.txt");
-        Path dirPath = FileSystems.getDefault().getPath("directions_big.txt");
+        Path locPath = FileSystems.getDefault().getPath("locations.dat");
 
-        try (BufferedWriter locFile = Files.newBufferedWriter(locPath);
-             BufferedWriter dirFile = Files.newBufferedWriter(dirPath)) {
-
-            for (Location location : locations.values()) {
-                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
-                for (String direction : location.getExits().keySet()) {
-                    if(!direction.equalsIgnoreCase("Q")) {
-                        dirFile.write(location.getLocationID() + "," + direction + "," +
-                                location.getExits().get(direction) + "\n");
-                    }
-                }
+        try(ObjectOutputStream locFile = new ObjectOutputStream(new BufferedOutputStream(Files.newOutputStream(locPath)))) {
+            for(Location location : locations.values()) {
+                locFile.writeObject(location);
             }
-        }
-        catch (IOException e) {
-            System.out.println("IO Exception: " + e.getMessage());
         }
     }
 
@@ -36,22 +24,29 @@ public class Locations implements Map<Integer, Location> {
 
     static {
 
-        Path locPath = FileSystems.getDefault().getPath("locations_big.txt");
-        Path dirPath = FileSystems.getDefault().getPath("directions_big.txt");
+        Path locPath = FileSystems.getDefault().getPath("locations.dat");
 
-        try (Scanner scanner = new Scanner(Files.newBufferedReader(locPath))) {
-            scanner.useDelimiter(",");
+        try(ObjectInputStream locFile = new ObjectInputStream(new BufferedInputStream(Files.newInputStream(locPath)))) {
+            boolean eof = false;
 
-            while(scanner.hasNextLine()) {
-                int loc = scanner.nextInt();
-                scanner.skip(scanner.delimiter());
-                String description = scanner.nextLine();
-                System.out.println("Imported location: " + loc + " : " + description);
-                locations.put(loc, new Location(loc, description, null));
+            while(!eof) {
+                try {
+                    Location location = (Location) locFile.readObject();
+                    locations.put(location.getLocationID(), location);
+                }
+                catch (EOFException e) {
+                    eof = true;
+                }
             }
+        }
+        catch (InvalidClassException e) {
+            System.out.println("Invalid Class Exception: " + e.getMessage());
         }
         catch (IOException e) {
             System.out.println("IO Exception: " + e.getMessage());
+        }
+        catch(ClassNotFoundException e) {
+            System.out.println("Class Not Found Exception: " + e.getMessage());
         }
     }
 
