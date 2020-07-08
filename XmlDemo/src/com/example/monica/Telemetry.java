@@ -41,31 +41,20 @@ public class Telemetry {
 
             doc.getDocumentElement().normalize();
             System.out.println("Root Element: " + doc.getDocumentElement().getNodeName());
-            NodeList nodeList = doc.getElementsByTagName("datastream");
+            NodeList nodeList = doc.getElementsByTagName("*");
 
             //nodelist is not iterable - use for loop to read file - print out contents
             for(int i=0; i < nodeList.getLength(); i++) {
                 Node node = nodeList.item(i);
-                System.out.println("\nNode name: " + node.getNodeName());
+
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
-                    Element element = (Element) node;
-                    System.out.println("Source: " + element.getElementsByTagName("source").item(0).getTextContent());
-                    System.out.println("Id: " + element.getElementsByTagName("id").item(0).getTextContent());
-                    System.out.println("Timestamp: " + element.getElementsByTagName("timestamp").item(0).getTextContent());
-                    if (parseInt(element.getElementsByTagName("min").item(0).getTextContent()) < 10) {
-                        System.out.println("\tMIN IS BELOW 10");
-                        System.out.println("\t\tMin: " + element.getElementsByTagName("min").item(0).getTextContent());
-                    }
-                    else {
-                        System.out.println("Min: " + element.getElementsByTagName("min").item(0).getTextContent());
-                    }
-                    if (parseInt(element.getElementsByTagName("max").item(0).getTextContent()) > 50) {
-                        System.out.println("\tMAX IS GREATER THAN 50");
-                        System.out.println("\t\tMax: " + element.getElementsByTagName("max").item(0).getTextContent());
-                    }
-                    else {
-                        System.out.println("Max: " + element.getElementsByTagName("max").item(0).getTextContent());
-                    }
+                    // THIS WORKS
+                    System.out.println(node.getNodeName() + " : " + node.getChildNodes().item(0).getNodeValue());
+
+                    // BAD check works
+//                    if (node.getChildNodes().item(0).getNodeValue().contains("bad")) {
+//                        System.out.println("!!!!!!!!!BAD FILES!!!!!!!!!!");
+//                    }
                 }
             }
         }

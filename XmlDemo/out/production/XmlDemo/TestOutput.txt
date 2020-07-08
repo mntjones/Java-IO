@@ -1,0 +1,279 @@
+/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=60070:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/monica/Google Drive/Java-IO/XmlDemo/out/production/XmlDemo:/Users/monica/Downloads/dom-2.3.0-jaxb-1.0.6.jar com.example.monica.Telemetry
+Root Element: DashboardMessages
+DashboardMessages :
+
+system : MessageBus
+
+sourceId : 1
+
+sourceName : ActiveMQ_01
+
+msgId : 1
+
+msgName : s4.file.data.size
+value : null
+timestamp : null
+periodicity : 30
+msgId : 2
+
+msgName : s4.file.data.consumercount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 3
+
+msgName : s4.file.data.enqueuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 4
+
+msgName : s4.file.data.dequeuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 5
+
+msgName : s4.file.data.size
+value : null
+timestamp : null
+periodicity : 30
+msgId : 6
+
+msgName : s4.channel.data.consumercount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 7
+
+msgName : s4.channel.data.enqueuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 8
+
+msgName : s4.channel.data.dequeuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 9
+
+msgName : ltt.watcher.size
+value : null
+timestamp : null
+periodicity : 30
+msgId : 10
+
+msgName : ltt.watcher.consumercount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 11
+
+msgName : ltt.watcher.enqueuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 12
+
+msgName : ltt.watcher.dequeuecount
+value : null
+timestamp : null
+periodicity : 30
+sourceId : 2
+
+sourceName : ActiveMQ_02
+
+msgId : 1
+
+msgName : s4.file.data.size
+value : null
+timestamp : null
+periodicity : 30
+msgId : 2
+
+msgName : s4.file.data.consumercount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 3
+
+msgName : 4.file.data.enqueuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 4
+
+msgName : s4.file.data.dequeuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 5
+
+msgName : s4.file.data.size
+value : null
+timestamp : null
+periodicity : 30
+msgId : 6
+
+msgName : s4.channel.data.consumercount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 7
+
+msgName : s4.channel.data.enqueuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 8
+
+msgName : s4.channel.data.dequeuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 9
+
+msgName : ltt.watcher.size
+value : null
+timestamp : null
+periodicity : 30
+msgId : 10
+
+msgName : ltt.watcher.consumercount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 11
+
+msgName : ltt.watcher.enqueuecount
+value : null
+timestamp : null
+periodicity : 30
+msgId : 12
+
+msgName : ltt.watcher.dequeuecount
+value : null
+timestamp : null
+periodicity : 30
+system : Operating System
+
+sourceId : 3
+
+sourceName : s4 log filesize
+
+msgId : 1
+
+msgName : s4logfilesize
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 2
+
+msgName : disk space used in project_record
+value : null
+timestamp : null
+periodicity : 3600
+system : StarWatchers
+
+sourceId : 4
+
+sourceName : starwatch_01
+
+msgId : 1
+
+msgName : files processed
+value : null
+timestamp : null
+periodicity : 600
+msgId : 2
+
+msgName : files to process
+value : null
+timestamp : null
+periodicity : 600
+msgId : 3
+
+msgName : bad files detected
+value : null
+timestamp : null
+periodicity : 300
+msgId : 4
+
+msgName : String One SV star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 5
+
+msgName : String One ISIM star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 5
+
+msgName : String One FTA star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 6
+
+msgName : String Two SV star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 7
+
+msgName : String Two ISIM star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 8
+
+msgName : String Two FTA star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 9
+
+msgName : String Three SV star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 8
+
+msgName : String Three ISIM star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+msgId : 9
+
+msgName : String Three FTA star_watch instance
+value : null
+timestamp : null
+periodicity : 3600
+sourceId : 5
+
+sourceName : starwatch_02
+
+
+msgId : 1
+
+msgName :  Number of SRF files processed
+value : null
+timestamp : null
+periodicity : 600
+msgId : 2
+
+msgName : files to process
+value : null
+timestamp : null
+periodicity : 600
+msgId : 3
+
+msgName : bad files detected
+value : null
+timestamp : null
+periodicity : 300
+
+Process finished with exit code 0
