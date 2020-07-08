@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<telemetry>
+    <datastream>
+        <source>Claptrap</source>
+        <id>1</id>
+        <timestamp>2020-01-01:00:00:00</timestamp>
+        <min>10</min>
+        <max>30</max>
+    </datastream>
+
+    <datastream>
+        <source>Claptrap</source>
+        <id>1</id>
+        <timestamp>2020-02-02:23:59:00</timestamp>
+        <min>15</min>
+        <max>50</max>
+    </datastream>
+
+    <datastream>
+        <source>Claptrap</source>
+        <id>1</id>
+        <timestamp>2020-03-01:04:15:15</timestamp>
+        <min>0</min>
+        <max>101</max>
+    </datastream>
+
+    <datastream>
+        <source>SB4</source>
+        <id>4</id>
+        <timestamp>2020-05-10:05:55:55</timestamp>
+        <min>40</min>
+        <max>70</max>
+    </datastream>
+
+</telemetry>

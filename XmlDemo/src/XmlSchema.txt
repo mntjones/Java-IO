@@ -1,0 +1,25 @@
+DashboardMessages
+    MessageBus
+        sourceId
+            sourceName
+                msgId
+                    msgName
+                    value
+                    timestamp
+                    periodicity
+    OperatingSystem
+        sourceId
+            sourceName
+                msgId
+                    msgName
+                    value
+                    timestamp
+                    periodicity
+    StarWatchers
+        sourceId
+            sourceName
+                msgId
+                    msgName
+                    value
+                    timestamp
+                    periodicity

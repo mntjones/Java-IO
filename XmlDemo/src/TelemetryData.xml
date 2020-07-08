@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DashboardMessages>
+    <MessageBus>
+        <sourceId>1
+            <sourceName>ActiveMQ_01
+                <msgId>1
+                    <msgName>s4.file.data.size</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>2
+                    <msgName>s4.file.data.consumercount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>3
+                    <msgName>s4.file.data.enqueuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>4
+                    <msgName>s4.file.data.dequeuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>5
+                    <msgName>s4.file.data.size</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>6
+                    <msgName>s4.channel.data.consumercount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>7
+                    <msgName>s4.channel.data.enqueuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>8
+                    <msgName>s4.channel.data.dequeuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>9
+                    <msgName>ltt.watcher.size</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>10
+                    <msgName>ltt.watcher.consumercount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>11
+                    <msgName>ltt.watcher.enqueuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>12
+                    <msgName>ltt.watcher.dequeuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+            </sourceName>
+        </sourceId>
+
+        <sourceId>2
+            <sourceName>ActiveMQ_02
+                <msgId>1
+                    <msgName>s4.file.data.size</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>2
+                    <msgName>s4.file.data.consumercount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>3
+                    <msgName>4.file.data.enqueuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>4
+                    <msgName>s4.file.data.dequeuecount</msgName>
+                    <value>null </value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>5
+                    <msgName>s4.file.data.size</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>6
+                    <msgName>s4.channel.data.consumercount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>7
+                    <msgName>s4.channel.data.enqueuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>8
+                    <msgName>s4.channel.data.dequeuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>9
+                    <msgName>ltt.watcher.size</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>10
+                    <msgName>ltt.watcher.consumercount</msgName>
+                    <value>null </value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>11
+                    <msgName>ltt.watcher.enqueuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+                <msgId>12
+                    <msgName>ltt.watcher.dequeuecount</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>30</periodicity>
+                </msgId>
+
+            </sourceName>
+        </sourceId>
+    </MessageBus>
+
+    <OperatingSystem>
+        <sourceId>3
+            <sourceName>s4 log filesize
+                <msgId>1
+                    <msgName>s4logfilesize</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>2
+                    <msgName>disk space used in project_record</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+            </sourceName>
+        </sourceId>
+    </OperatingSystem>
+
+    <StarWatchers>
+        <sourceId>4
+            <sourceName>starwatch_01
+                <msgId>1
+                    <msgName>files processed</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>600</periodicity>     <!-- 60*10= 10 minutes -->
+                </msgId>
+
+                <msgId>2
+                    <msgName>files to process</msgName>
+                    <value>null </value>
+                    <timestamp>null</timestamp>
+                    <periodicity>600</periodicity>     <!-- 60*10= 10 minutes -->
+                </msgId>
+
+                <msgId>3
+                    <msgName>bad files detected</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>300</periodicity>     <!-- 60*5= 5 minutes -->
+                </msgId>
+
+                <msgId>4
+                <msgName>String One SV star_watch instance</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>5
+                    <msgName>String One ISIM star_watch instance</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>5
+                <msgName>String One FTA star_watch instance</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>6
+                    <msgName>String Two SV star_watch instance</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>7
+                    <msgName>String Two ISIM star_watch instance</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>8
+                    <msgName>String Two FTA star_watch instance</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>9
+                    <msgName>String Three SV star_watch instance</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>8
+                <msgName>String Three ISIM star_watch instance</msgName>
+                    <value>null</value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+
+                <msgId>9
+                    <msgName>String Three FTA star_watch instance</msgName>
+                    <value>null </value>
+                    <timestamp>null</timestamp>
+                    <periodicity>3600</periodicity>     <!-- 60*60= hourly -->
+                </msgId>
+            </sourceName>
+        </sourceId>
+
+        <sourceId>5
+            <sourceName>starwatch_02
+
+                <msgId>1
+                    <msgName> Number of SRF files processed</msgName>
+                    <value>null </value>
+                    <timestamp>null</timestamp>
+                    <periodicity>600</periodicity>     <!-- 60*10= 10 minutes -->
+                </msgId>
+
+                <msgId>2
+                    <msgName>files to process</msgName>
+                    <value>null </value>
+                    <timestamp>null</timestamp>
+                    <periodicity>600</periodicity>     <!-- 60*10= 10 minutes -->
+                </msgId>
+
+                <msgId>3
+                    <msgName>bad files detected</msgName>
+                    <value>null </value>
+                    <timestamp>null</timestamp>
+                    <periodicity>300</periodicity>     <!-- 60*5= 5 minutes -->
+                </msgId>
+            </sourceName>
+        </sourceId>
+    </StarWatchers>
+</DashboardMessages>
