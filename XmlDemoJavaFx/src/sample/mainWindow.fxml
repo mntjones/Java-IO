@@ -10,24 +10,53 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.shape.Box?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.TextArea?>
 <BorderPane fx:id="mainBorderPane" fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml"
             prefWidth="500" prefHeight="200">
     <top>
+        <ToolBar>
+            <HBox>
+                <Button>
+                    <tooltip>
+                        <Tooltip text="Show all files processed" />
+                    </tooltip>
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/multiple-files.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </HBox>
+        </ToolBar>
     </top>
     <left>
+
         <VBox>
+            <Text>Click buttons to see details of files processed</Text>
+            <Text></Text>
             <Label text="Message Bus"/>
-            <Box width="100" height="100" style="-fx-background-color: gray">
+            <HBox>
+                <Button minWidth="100" minHeight="100" style="-fx-background-color: green">1</Button>
+                <Button minWidth="100" minHeight="100" style="-fx-background-color: red">1</Button>
+            </HBox>
 
-            </Box>
             <Label text="Operating System"/>
-            <Box width="100" height="100" style="-fx-background-color: gray">
+            <HBox>
+                <Button minWidth="100" minHeight="100" style="-fx-background-color: green">1</Button>
+                <Button minWidth="100" minHeight="100" style="-fx-background-color: red">1</Button>
+            </HBox>
 
-            </Box>
             <Label text="Star Watchers"/>
-            <Box width="100" height="100" style="-fx-background-color: gray">
-
-            </Box>
+            <HBox>
+                <Button minWidth="100" minHeight="100" style="-fx-background-color: green">1</Button>
+                <Button minWidth="100" minHeight="100" style="-fx-background-color: red">1</Button>
+            </HBox>
         </VBox>
 
     </left>
