@@ -1,0 +1,13 @@
+.button-red {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.button-green {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+}
+.button {
+    padding: 20px;
+    margin: 20px;
+}

@@ -18,10 +18,13 @@
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.control.TextArea?>
 <BorderPane fx:id="mainBorderPane" fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml"
-            prefWidth="500" prefHeight="200">
+            prefWidth="500" prefHeight="200"  stylesheets="@styles.css">
     <top>
         <ToolBar>
             <HBox>
+                <Button onAction="#getTelemetryData">
+                    Run...
+                </Button>
                 <Button>
                     <tooltip>
                         <Tooltip text="Show all files processed" />
@@ -42,28 +45,28 @@
             <Text></Text>
             <Label text="Message Bus"/>
             <HBox>
-                <Button minWidth="100" minHeight="100" style="-fx-background-color: green">1</Button>
-                <Button minWidth="100" minHeight="100" style="-fx-background-color: red">1</Button>
+                <Button minWidth="100" minHeight="100" styleClass="button-green">1</Button>
+                <Button minWidth="100" minHeight="100" styleClass="button-red">1</Button>
             </HBox>
 
             <Label text="Operating System"/>
             <HBox>
-                <Button minWidth="100" minHeight="100" style="-fx-background-color: green">1</Button>
-                <Button minWidth="100" minHeight="100" style="-fx-background-color: red">1</Button>
+                <Button minWidth="100" minHeight="100" styleClass="button-green">1</Button>
+                <Button minWidth="100" minHeight="100" styleClass="button-red">1</Button>
             </HBox>
 
             <Label text="Star Watchers"/>
             <HBox>
-                <Button minWidth="100" minHeight="100" style="-fx-background-color: green">1</Button>
-                <Button minWidth="100" minHeight="100" style="-fx-background-color: red">1</Button>
+                <Button minWidth="100" minHeight="100" styleClass="button-green">1</Button>
+                <Button minWidth="100" minHeight="100" styleClass="button-red">1</Button>
             </HBox>
         </VBox>
 
     </left>
     <center>
-        <ListView>
+        <Text fx:id="telemetryText">
 
-        </ListView>
+        </Text>
     </center>
 
     <bottom>
