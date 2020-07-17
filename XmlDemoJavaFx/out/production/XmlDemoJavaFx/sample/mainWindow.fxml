@@ -64,9 +64,9 @@
 
     </left>
     <center>
-        <Text fx:id="telemetryText">
+        <ListView fx:id="telemetryListView">
 
-        </Text>
+        </ListView>
     </center>
 
     <bottom>

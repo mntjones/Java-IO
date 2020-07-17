@@ -7,6 +7,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.text.Text;
 
+import java.io.IOException;
+
 public class Controller {
 
     @FXML
@@ -23,11 +25,9 @@ public class Controller {
         telemetryText = new Text();
         telemetryText.setText("Figure out how to put XML here");
 
-        telemetryListView.setItems();
-
     }
 
-    public void getTelemetryData() {
+    public void getTelemetryData() throws IOException {
         Telemetry telemetry = new Telemetry();
         telemetry.readTelemetry();
     }
