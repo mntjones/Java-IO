@@ -1,0 +1,7 @@
+This is a file within the "files" folder - named Subdirectory
+
+Here is some more text. I'm supposed to be learning Java. This is a bit of a slog.
+
+I am tired of working. Can't I just be independently wealthy?
+
+Oh well, here we go...

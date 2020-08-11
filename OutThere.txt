@@ -1,0 +1,6 @@
+File outside of Paths project - in main Java_IO folder.
+
+Random text
+Things are slow.
+Playing animal Crossing Pocket camps
+
